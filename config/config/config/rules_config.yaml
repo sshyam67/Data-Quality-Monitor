@@ -1,0 +1,10 @@
+rules:
+  - column: age
+    check: not_null
+  - column: salary
+    check: no_negative
+  - column: id
+    check: unique
+  - column: join_date
+    check: date_format
+    format: "%Y-%m-%d"
